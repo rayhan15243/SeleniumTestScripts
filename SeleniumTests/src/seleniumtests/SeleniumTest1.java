@@ -35,10 +35,10 @@ public class SeleniumTest1 {
 //  WebDriver driver = new ChromeDriver();
     	
      
-   System.setProperty("webdriver.gecko.driver", "C:\\Users\\k1786825\\Downloads\\SeleniumTests\\geckodriver-v0.26.0-win64\\geckodriver.exe");
+   System.setProperty("webdriver.gecko.driver", "C:\\Users\\k1786825\\SeleniumTestScripts\\geckodriver-v0.26.0-win64\\geckodriver.exe");
    WebDriver driver = new FirefoxDriver();
     
-    driver.get("https://cms-kcl-test.cloud.contensis.com/");
+    driver.get("https://uatmy.corehr.com/pls/coreportal_kclx/");
     
     driver.manage().window().maximize();
     
@@ -48,12 +48,12 @@ public class SeleniumTest1 {
     	
     
  
-   WebElement email = driver.findElement(By.id("_Textbox_Username"));
-   WebElement password = driver.findElement(By.id("_Textbox_Password"));
-   WebElement login = driver.findElement(By.id("ctl35"));
+   WebElement email = driver.findElement(By.id("p_username"));
+   WebElement password = driver.findElement(By.name("p_password"));
+   WebElement login = driver.findElement(By.id("login-button"));
    
-   email.sendKeys("rayhantest");
-   password.sendKeys("password123");
+   email.sendKeys("ITPROFILE1");
+   password.sendKeys("Kingscollegelondon2020!");
    login.click();
    
    
