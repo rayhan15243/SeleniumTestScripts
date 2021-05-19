@@ -59,6 +59,7 @@ public class SeleniumTest1 {
    
     }catch(Exception e){
         System.out.println(e);
+        driver.quit();
     }
     
 
